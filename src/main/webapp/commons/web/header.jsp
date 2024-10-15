@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<c:url value="/" var="URL"></c:url>
    
     <!-- BEGIN TOP BAR -->
     <div class="pre-header">
@@ -47,9 +48,7 @@
 		</c:when>
 		<c:otherwise>
 			
-					<a
-						href="${pageContext.request.contextPath}/member/myaccount">${sessionScope.account.fullName}</a>
-						| <a href="${pageContext.request.contextPath }/logout">Đăng
+					${sessionScope.account.fullname}| <a href="${pageContext.request.contextPath }/logout">Đăng
 							xuất </a>
 							
 		</c:otherwise>

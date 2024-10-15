@@ -15,7 +15,7 @@ public interface IVideoDao {
 
     Video findById(String videoId);
 
-    void delete(int videoId) throws Exception;
+    void delete(String videoId) throws Exception;
 
     void update(Video video);
 

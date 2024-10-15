@@ -51,7 +51,7 @@ public class VideoController extends HttpServlet {
         } else if (url.contains("delete")) {
             String videoId = req.getParameter("id");
             try {
-                videoService.delete(Integer.parseInt(videoId));
+                videoService.delete(videoId);
             } catch (Exception e) {
                 e.printStackTrace();
             }

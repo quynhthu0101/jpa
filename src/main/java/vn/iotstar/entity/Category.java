@@ -30,15 +30,12 @@ public class Category implements Serializable {
 
 	// bi-directional many-to-one association to Video
 
-		@OneToMany(mappedBy = "categories")
-		private List<Video> videos;
-		
+	@OneToMany(mappedBy = "categories")
+	private List<Video> videos;
 	
 	public Category() {
 
-	}
-
-	
+	}	
 
 	public int getCategoryid() {
 		return categoryid;

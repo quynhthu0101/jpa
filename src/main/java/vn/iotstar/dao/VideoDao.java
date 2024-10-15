@@ -61,7 +61,7 @@ public class VideoDao implements IVideoDao {
 	}
 
 	@Override
-	public void delete(int videoId) throws Exception {
+	public void delete(String videoId) throws Exception {
 		EntityManager em = JpaConfig.getEntityManager();
 		EntityTransaction transaction = em.getTransaction();
 		try {
