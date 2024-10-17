@@ -48,7 +48,9 @@
 		</c:when>
 		<c:otherwise>
 			
-					${sessionScope.account.fullname}| <a href="${pageContext.request.contextPath }/logout">Đăng
+					${sessionScope.account.fullname}|
+					<a href="${pageContext.request.contextPath }/profile">Xem thông tin cá nhân </a>
+					 <a href="${pageContext.request.contextPath }/logout">Đăng
 							xuất </a>
 							
 		</c:otherwise>
